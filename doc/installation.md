@@ -94,16 +94,16 @@ git clone --recurse-submodules https://github.com/NVIDIA/enroot.git
 Install the runtime dependencies:
 ```sh
 # Debian-based distributions
-sudo apt install -y curl gawk jq squashfs-tools parallel
+sudo apt install -y curl gawk jq squashfs-tools parallel zstd
 sudo apt install -y fuse-overlayfs libnvidia-container-tools pigz squashfuse # optional
 
 # RHEL-based distributions
 sudo dnf install -y epel-release # required on some distributions
-sudo dnf install -y jq squashfs-tools parallel
+sudo dnf install -y jq squashfs-tools parallel zstd
 sudo dnf install -y fuse-overlayfs libnvidia-container-tools pigz squashfuse # optional
 
 # Archlinux-based distributions
-sudo pacman --noconfirm -S jq parallel squashfs-tools
+sudo pacman --noconfirm -S jq parallel squashfs-tools zstd
 sudo pacman --noconfirm -S fuse-overlayfs libnvidia-container-tools pigz squashfuse # optional
 ```
 
